@@ -1,0 +1,30 @@
+/*
+	These styles are just for the example. The base styles are in SelectBox.css.
+*/	
+
+#example-1 .customSelect { clear: both; margin-bottom: 10px; }
+#example-2 .cities dd { padding: 0 5px; }
+
+/* COUNTRY SELECTBOX */
+/* This should be a sprite... but this is quicker for examples sake */
+dd span, .selectedValue span {
+	position: relative;
+	top: 2px;
+	display: block;
+	height: 12px;
+	width: 20px;
+	float: left;
+	clear: right;
+}
+dd span.usa, .selectedValue span.usa {
+	background: url("../img/us.png") no-repeat;
+}
+dd span.germany, .selectedValue span.germany {
+	background: url("../img/de.png") no-repeat;
+}
+dd span.france, .selectedValue span.france {
+	background: url("../img/fr.png") no-repeat;
+}
+dd span.italy, .selectedValue span.italy {
+	background: url("../img/it.png") no-repeat;
+}

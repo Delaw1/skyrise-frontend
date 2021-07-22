@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\skyrise-backend"
+		},
+		{
+			"path": "..\\..\\..\\..\\skyrise-frontend-new"
+		}
+	],
+	"settings": {}
+}

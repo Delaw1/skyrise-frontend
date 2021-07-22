@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Admin-Projects-Add-Open-Attached</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+	   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="css/easy-responsive-tabs.css">
+      <link href="images/fav-icon.png" rel="icon">
+	   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+
+	     <link rel="stylesheet" href="css/pushy.css">
+
+
+	
+   </head>
+   <body>
+      <div class="overlay">
+    <div class="overlay__inner">
+        <div class="overlay__content"><span class="spinner"></span></div>
+    </div>
+</div>
+<div id="header">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Skyrise-logo" /></a>
+   <button class="menu-btn d-none"><i class="zmdi zmdi-menu"></i></button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+     
+    
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PROJECTS</a>
+        <div class="dropdown-menu bk" aria-labelledby="navbarDropdown">
+<form>
+	<div class="input-space-white-scl">	
+<span class="dropdown-el">
+    <input type="radio" name="sortType1" value="City" checked="checked" id="City"><label for="City">City</label>
+    <input type="radio" name="sortType1" value="City 1" id="City-one"><label for="City-one">City 1</label>
+    <input type="radio" name="sortType1" value="City 2" id="City-two"><label for="City-two">City 2</label>
+    <input type="radio" name="sortType1" value="City 1" id="City-three"><label for="City-three">City 3</label>
+    <input type="radio" name="sortType1" value="City 1" id="City-four"><label for="City-four">City 4</label>
+   
+  </span>
+		</div>  
+			<div class="input-space-white-scl">	
+<span class="dropdown-el">
+    <input type="radio" name="sortType" value="Relevance" checked="checked" id="Property"><label for="Property">Property Type</label>
+    <input type="radio" name="sortType" value="Popularity" id="condos"><label for="condos">Condos</label>
+    <input type="radio" name="sortType" value="PriceIncreasing" id="Townhouse"><label for="Townhouse">Townhouse</label>
+    <input type="radio" name="sortType" value="PriceDecreasing" id="Row-house"><label for="Row-house">Row house</label>
+    <input type="radio" name="sortType" value="ProductBrand" id="Duplex"><label for="Duplex">1/2 Duplex</label>
+    <input type="radio" name="sortType" value="ProductName" id="Detached"><label for="Detached">Detached house</label>
+  </span>
+		</div>  
+		  
+	
+		
+
+		    <div class="input-space-white mb-0">
+			<input type="submit" value="GO" />
+		  </div>
+		  </form>
+       </div>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="#">Videos</a>
+      </li>
+		<li class="nav-item active">
+        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+      <ul class="navbar-right ex-spcz">
+ 
+	    <li>
+        <a href="#">SIGN UP</a>
+      </li>
+		   <li class=" dropdown">
+        <a class="hdl dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          LOG IN
+        </a>
+        <div class="dropdown-menu dropdown-menu-right log" aria-labelledby="navbarDropdown">
+          <form class="login-form">
+		  <div class="input-space-white">
+			<input type="email" placeholder="Email"/>
+		  </div>
+		   <div class="input-space-white">
+			<input type="password" placeholder="Password" />
+		  </div>
+		   <div class="input-space-white">
+				<input type="submit" value="LOGIN" />
+		  </div>
+		  <a href="javascript:void(0)" class="white-link forgot">Forgot your password?</a>
+		</form>
+		
+		         <form class="forgot-form">
+		  <div class="input-space-white">
+			<input type="email" placeholder="Enter recovery email"/>
+		  </div>
+	
+		   <div class="input-space-white">
+				<input type="submit" value="RECOVER PASSWORD" />
+		  </div>
+	
+		</form>
+        </div>
+      </li>
+      <li>
+	   <button class="menu-btn"><i class="zmdi zmdi-menu"></i></button>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+   <nav class="pushy pushy-right" data-focus="#first-link">
+            <div class="pushy-content">
+                <ul>
+                <li class="pushy-link"><a href="#">HOME</a></li>
+               
+                    <li class="pushy-submenu">
+                        <button>SKYRISE DASHBOARD <span>MVP</span></button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">Overview <span>MVP DONE</span></a></li>
+							<li class="pushy-link"><a href="">Inquiries  <span>MVP ??</span></a></li>
+							<li class="pushy-link"><a href="">Client list  <span>MVP</span></a></li>
+							
+							
+                           
+                        </ul>
+                    </li>
+					     <li class="pushy-submenu">
+                        <button>ANALYTICS </button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">Overview <span>MVP DONE</span></a></li>
+							<li class="pushy-link"><a href="">Inquiries  <span>MVP ??</span></a></li>
+							<li class="pushy-link"><a href="">Client list  <span>MVP</span></a></li>
+							
+							
+                           
+                        </ul>
+                    </li>
+					     <li class="pushy-submenu">
+                        <button>CMS: EMAIL CAMPAIGNS </button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">Overview <span>MVP DONE</span></a></li>
+							<li class="pushy-link"><a href="">Inquiries  <span>MVP ??</span></a></li>
+							<li class="pushy-link"><a href="">Client list  <span>MVP</span></a></li>
+							
+							
+                           
+                        </ul>
+                    </li>
+					     <li class="pushy-submenu">
+                        <button>CMS: DEVELOPER <span>MVP</span> </button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">Developers list <span>MVP DONE</span></a></li>
+							<li class="pushy-link"><a href="">Add developer  <span>MVP DONE</span></a></li>
+							
+							
+							
+                           
+                        </ul>
+                    </li>
+						     <li class="pushy-submenu">
+                        <button>CMS: PROJECTS <span>MVP</span> </button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">Project list <span>MVP DONE</span></a></li>
+							<li class="pushy-link"><a href="">Add project  <span>MVP DONE</span></a></li>
+							
+							
+							
+                           
+                        </ul>
+                    </li>
+					
+						     <li class="pushy-submenu">
+                        <button>CMS: UIX <span>MVP</span> </button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">Home page <span>MVP DONE</span></a></li>
+							<li class="pushy-link"><a href="">Project detail page</a></li>
+							<li class="pushy-link"><a href="">Videos Page  <span>MVP</span></a></li>
+							<li class="pushy-link"><a href="">General (font size, font color, etc...)</a></li>
+							
+							
+							
+                           
+                        </ul>
+                    </li>
+						     <li class="pushy-submenu">
+                        <button>SKYRISE ACCOUNT <span>MVP</span> </button>
+                        <ul class="sub-ul">
+                            
+							<li class="pushy-link"><a href="">PROFILE <span>MVP</span></a></li>
+							<li class="pushy-link"><a href="">Access </a></li>
+							<li class="pushy-link"><a href="">Notifications</a></li>
+							<li class="pushy-link"><a href="">Security <span>MVP</span></a></li>
+							
+							
+							
+                           
+                        </ul>
+                    </li>
+                  
+                
+                  
+					 <li class="pushy-link"><a href="#">LOGOUT</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+<div class="h-p"></div>
+<div class="inner-area">
+<div class="container-fluid">
+
+
+<div class="row">
+	<div class="col-md-4">
+	<h2 class="admin-heading clearfix">PROJECTS</h2>
+	<div class="input-space srch">
+	<label for="">Developer</label>
+		<input type="text" value="IMANI Group">
+		<button class="srch"><i class="zmdi zmdi-search"></i></button>
+	</div>
+	<div class="input-space">
+	<label for="">Project name</label>
+		<input type="text" value="Akimbo">
+	</div>
+
+
+
+
+<div class=" overall-hold">
+<div class="property-type">
+<label class="tp" for="">Property Type</label>
+<div class="row">
+<div class="col-md-8">
+<div class="control-group">
+    <label class="control control-checkbox one blk-bz">
+        Condos
+            <input type="checkbox" class="one" disabled="disabled" checked="checked"/>
+        <div class="control_indicator"></div>
+    </label>
+	</div>
+	</div>
+	<div class="col-md-4">
+	<div class="input-space mb-3">
+		<input type="text" placeholder="Units"  value="126" />
+	</div>
+
+	</div>
+	</div>
+
+	<div class="row">
+<div class="col-md-8">
+<div class="control-group">
+    <label class="control control-checkbox two blk-bz">
+        Town house
+            <input type="checkbox" class="two" disabled="disabled" checked="checked" />
+        <div class="control_indicator"></div>
+    </label>
+	</div>
+	</div>
+	<div class="col-md-4">
+	<div class="input-space mb-3">
+		<input type="text" placeholder="Units" value="16"/>
+	</div>
+	</div>
+	</div>
+	
+		<div class="row">
+<div class="col-md-8">
+<div class="control-group">
+    <label class="control control-checkbox three">
+        Row house
+            <input type="checkbox" class="three" />
+        <div class="control_indicator"></div>
+    </label>
+	</div>
+	</div>
+	<div class="col-md-4">
+	<div class="input-space mb-3">
+		<input type="text" placeholder="Units"/>
+	</div>
+
+	</div>
+	</div>
+	</div>
+
+
+	</div>
+		<div class="input-space">
+	<label for="">Levels</label>
+		<input type="text">
+	</div>
+	
+		<div class="input-space">
+	<label for="">Base price</label>
+		<input type="text">
+	</div>
+	
+	</div>
+	
+		<div class="col-md-4">
+		<h2 class="admin-heading clearfix">LOCATION</h2> 
+			<div class="input-space srch">
+	<label for="">Project address</label>
+		<input type="text" value="888 Pacific St.">
+		<button class="srch"><i class="zmdi zmdi-search"></i></button>
+	</div>
+
+	<div class="input-space">
+	<label for="">Sales center and address</label>
+		<input type="text" value="815 Willingdon  Ave.">
+		<button class="srch"><i class="zmdi zmdi-search"></i></button>
+	</div>
+
+	<div class="input-space mb-0">
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="370" id="gmap_canvas" src="https://maps.google.com/maps?q=Robson%20St&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+	</div>
+	</div>
+	
+		<div class="col-md-4">
+		<h2 class="admin-heading clearfix">DETAILS</h2>
+		
+			<div class="input-space">
+	<label for="">Architect</label>
+		<input type="text" >
+	</div>
+	<div class="input-space">
+	<label for="">Interior designer</label>
+		<input type="text">
+	</div>
+
+	<div class="input-space-white">
+	<label for="">Completion date</label>
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+	
+		
+
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Month</option>
+			<option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+		</select>
+	
+	</div>
+
+	
+		
+	</div>
+		<div class="col-md-6 pl-md-1">
+				  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Year</option>
+			<option value="01">2021</option>
+        <option value="02">2022</option>
+        <option value="03">2023</option>
+        <option value="03">2024</option>
+        <option value="03">2025</option>
+        <option value="03">2026</option>
+        <option value="03">2027</option>
+        <option value="03">2028</option>
+        <option value="03">2029</option>
+        <option value="03">2030</option>
+        <option value="03">2031</option>
+        <option value="03">2032</option>
+        
+		</select>
+	
+	</div>
+	</div>
+	</div>
+	</div>
+
+		<div class="input-space-white">
+<label for="">Status</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Select</option>
+		<option value="">Presale, Nearly sold out, Sold out</option>
+		<option value="">Presale</option>
+		<option value="">Nearly sold out</option>
+		<option value="">Sold out</option>
+		
+		</select>
+	
+	</div>
+</div>
+	<div class="input-space">
+	<label for="">Sales company / Brokerage / Agent</label>
+		<input type="text" >
+	</div>
+	<div class="input-space">
+	<label for="">Website</label>
+		<input type="text" >
+	</div>
+	<div class="input-space">
+	<label for="">Phone number</label>
+		<input type="tel">
+	</div>
+		<div class="input-space">
+	<label for="">Email</label>
+		<input type="email">
+	</div>
+	</div>
+</div>
+
+<h2 class="page-heading ">
+DESCRIPTION
+            </h2>
+			<div class="input-space mb-0">
+	
+	
+		<textarea name="" placeholder="Project description..." id=""></textarea>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+		<h2 class="page-heading ">
+DEPOSIT TERMS
+            </h2>
+						<div class="input-space mb-0">
+
+	
+		<textarea name="" placeholder="Deposit terms..." id=""></textarea>
+	</div>
+		</div>
+		<div class="col-md-6">
+		<h2 class="page-heading ">
+AGENT COMMISSIONS
+            </h2>
+									<div class="input-space  mb-0">
+
+	
+		<textarea name="" placeholder="Agent commissions..." id=""></textarea>
+	</div>
+		</div>
+	</div>
+	
+	
+	<div class="h-area mt-ex">
+<h2 class="admin-heading-sub bod new-bt">SALES PROMOTIONS</h2>
+<a href="javascript:void(0)" class="close-link opensale">Add</a>
+</div>
+<div class="showsale clearfix">
+<div class="row">
+<div class="col-md-6">
+<div class="input-space">
+	<label for="">Promotion title</label>
+	<input type="text" value="2021 Grand Opening">
+		
+	</div>
+	<div class="input-space">
+		<div class="row">
+	<div class="col-md-6 pr-md-1">
+	<label>Start date</label>
+		 <input id="datepicker" placeholder="Start Date"/>
+	</div>
+		<div class="col-md-6 pl-md-1">
+	<label>End date</label>
+		 <input id="datepicker2" placeholder="End Date" />
+	</div>
+	</div>
+
+	</div>
+
+</div>
+</div>
+		<div class="input-space">
+	
+	
+	<label for="">Description</label>
+		<textarea name="" placeholder="" id="" class="ex-h">We're excited to share a construction update for the Camellia Residences project located in 10928 132nd Street in Surrey, BC.
+
+Construction is on schedule and details are progressing and are visible on the exterior and interior of the building. See the attached
+photographs for your reference. We'll continue to provide weekly updates on our Social Media Accounts until our Grand Opening in the
+Summer of 2021.</textarea>
+<div class="right-btnz clearfix">
+	<input type="button" value="DELETE">
+	<input type="button" value="ADD PROMOTION">
+</div>
+	</div>
+	</div>
+	<table class="prj-list bt-blk bd top-no">
+  <thead>
+    <tr>
+      <th width="20%" scope="col">Title</th>
+      <th width="45%" scope="col">Description</th>
+      <th width="15%" scope="col">Start Date</th>
+      <th width="15%" scope="col">End Date</th>
+    
+      <th width="5%" scope="col" class="text-right">EDIT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Title">2021 Grand Opening</td>
+      <td data-label="Description">
+	<p>We're excited to share a construction update for the Camellia Residences project<Br>
+located in 10928 132nd Street in Surrey, BC.</p>
+
+<p>Construction is on schedule and details are progressing and are visible on the<Br>
+exterior and interior of the building.</p>
+
+
+	  </td>
+      <td data-label="Start Date" >Feb 19, 2021</td>
+      <td data-label="End Date">Feb 28, 2021</td>
+      <td data-label="EDIT" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+    <tr>
+      <td data-label="Title" class="gc">Valentine’s Day Special</td>
+      <td data-label="Description" class="gc">
+	<p>Construction is on schedule and details are progressing faster than predicted.</p>
+
+
+
+	  </td>
+      <td data-label="Start Date" class="gc">Feb 08, 2021</td>
+      <td data-label="End Date" class="gc">Feb 14, 2021</td>
+      <td data-label="EDIT" class="text-right gc"><a href="">Edit</a></td>
+     
+    </tr>
+ </tbody>
+</table>
+
+	
+	
+	<div class="add-area">
+			<h2 class="page-heading ">
+PHOTOS
+            </h2>
+			<a href="" class="link-right">Add</a>
+			</div>
+			<ul class="tab-list clearfix">
+
+
+
+
+ <li>
+   
+   
+	<div class="img-coverz">
+      <img src="images/photo-1.jpg" class="up-img" alt="loading">
+		<a href="" class="corner-cross"><i class="zmdi zmdi-close"></i></a>
+		</div>
+    
+  </li>
+<li><div class="photo-box"><a href="#">Photo 2</a></div></li>
+<li><div class="photo-box"><a href="#">Photo 3</a></div></li>
+<li><div class="photo-box"><a href="#">Photo 4</a></div></li>
+<li><div class="photo-box"><a href="#">Photo 5</a></div></li>
+<li><div class="photo-box"><a href="#">Photo 6</a></div></li>
+<li><div class="photo-box"><a href="#">Photo 7</a></div></li>
+<li><div class="photo-box"><a href="#">Photo 8</a></div></li>
+
+
+        </ul>
+		<div class="add-area">
+					<h2 class="page-heading ">
+VIDEOS
+            </h2>
+			<a href="" class="link-right">Add</a>
+			
+			</div>
+						<ul class="vid-list clearfix">
+
+
+
+
+ <li>
+   
+   
+	<div class="vid-coverz">
+      <img src="images/v1.jpg" class="up-img" alt="loading">
+		<a href="" class="corner-cross"><i class="zmdi zmdi-close"></i></a>
+		</div>
+    
+  </li>
+<li><div class="vid-box"><a href="#">Video 2</a></div></li>
+<li><div class="vid-box"><a href="#">Video 3</a></div></li>
+
+
+
+        </ul>
+		
+		<div class="h-area mt-ex">
+<h2 class="admin-heading-sub bod new-bt mb-0">AMENITIES</h2>
+<a href="javascript:void(0)" class="close-link open">Add</a>
+</div>
+<div class="showpanel clearfix">
+<div class="row">
+<div class="col-md-6">
+			<div class="input-space">
+	<label for="">Amenity title</label>
+	<input type="text" value="2021 Grand Opening">
+		
+	</div>
+	</div>
+	</div>
+	
+				<div class="input-space">
+	
+	
+	<label for="">Description</label>
+		<textarea name="" placeholder="" id="" class="ex-h">
+We're excited to share a construction update for the Camellia Residences project located in 10928 132nd Street in Surrey, BC.
+
+Construction is on schedule and details are progressing and are visible on the exterior and interior of the building. See the attached
+photographs for your reference. We'll continue to provide weekly updates on our Social Media Accounts until our Grand Opening in the
+Summer of 2021.</textarea>
+<div class="right-btnz clearfix">
+	<input type="button" value="DELETE" />
+	<input type="button" value="ADD AMENITY"/>
+</div>
+	</div>
+</div>
+
+  <table class="prj-list bt-blk bd bt-grey top-bk">
+  <thead>
+    <tr>
+      <th width="30%" scope="col" >AMENITY</th>
+      <th width="60%" scope="col">DESCRIPTION</th>
+    
+      <th width="10%" scope="col" class="text-right">EDIT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="AMENITY">24/7 concierge</td>
+      <td data-label="DESCRIPTION" >
+	 <p>We're excited to share a construction update for the Camellia Residences project located in 10928 132nd
+Street in Surrey, BC. </p>
+
+<p>Construction is on schedule and details are progressing and are visible on the exterior of the building.</p>
+	  </td>
+      <td data-label="EDIT" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+	    <tr>
+      <td data-label="AMENITY">Car Wash</td>
+      <td data-label="DESCRIPTION" >
+	 <p>Construction is on schedule and details are progressing and are visible on the exterior and...</p>
+	  </td>
+      <td data-label="Edit" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+		    <tr>
+      <td data-label="AMENITY">Child’s daycare</td>
+      <td data-label="DESCRIPTION" >
+	 <p>You are invited to come and visit the Presentation Centre at 10501 King George Blvd in...</p>
+	  </td>
+      <td data-label="Edit" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+    
+	
+ </tbody>
+</table>
+		<div class="h-area mt-ex">
+<h2 class="admin-heading-sub bod new-bt">FLOOR PLANS</h2>
+<a href="javascript:void(0)" class="close-link openfloor">Add</a>
+
+
+</div>
+
+<div class="showfloor">
+<div class="row">
+<div class="col-md-4">
+<h6 class="f-h">Floor plan</h6>
+					<a class="blue-t" href="javascript:void(0);">Upload</a>
+					
+					<div class="file-upload-box">
+					<a href="#">Click this placeholder to <br>
+						upload floor plan image
+					</a>
+					</div>
+					
+							<label class="black crz"><a href="#"> <i class="zmdi zmdi-close cross-bt"></i> Floorplan.pdf</a></label>
+					<div class="file-upload-box position-relative">
+					<a href="" title="" class="pdf-cross">
+     <i class="zmdi zmdi-close"></i>
+
+    </a>
+				<img src="images/pdf-cover.jpg" class="img-fluid">
+					</div>
+					</div>
+					<div class="col-md-4">
+							<div class="input-space-white">
+<label for="">Floor plan type</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Select</option>
+		<option value="">Studio</option>
+		<option value="">1 Bedroom Condo</option>
+		<option value="">2 Bedroom Condo</option>
+		<option value="">3 Bedroom Condo</option>
+		<option value="">4 Bedroom Condo</option>
+		<option value="">5 Bedroom Condo</option>
+		<option value="">6 Bedroom Condo</option>
+		<option value="">Sub penthouse</option>
+		<option value="">Penthouse</option>
+		<option value="">Townhouse</option>
+		<option value="">Row house</option>
+		<option value="">1/2 Duplex</option>
+		
+		</select>
+	
+	</div>
+</div>
+
+							<div class="input-space">
+<label for="">Plan ID</label>
+<input type="text" placeholder="Enter plan ID" />
+</div>
+
+							<div class="input-space-white">
+						
+
+	<div class="row">
+							<div class="col-md-4 pr-1">
+							<label>Bedrooms</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Select</option>
+		<option value="">1</option>
+		<option>2</option>
+		<option value="">3</option>
+		<option value="">4</option>
+		<option value="">5</option>
+		<option value="">6</option>
+		
+		</select>
+	
+	</div>
+	</div>
+								<div class="col-md-4 pl-1 pr-1">
+								<label>Bathrooms</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		
+		<option value="">Select</option>
+		<option value="">1</option>
+		<option>2</option>
+		<option value="">3</option>
+		<option value="">4</option>
+		<option value="">5</option>
+		<option value="">6</option>
+		
+		</select>
+	
+	</div>
+	</div>
+								<div class="col-md-4 pl-1">
+								<label>Den</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Select</option>
+		<option value="">0</option>
+		<option value="">1</option>
+	
+		
+		</select>
+	
+	</div>
+	</div>
+</div>
+
+					</div>
+					
+						<div class="input-space">
+					<label>Floor Size (SF)</label>
+						<div class="row">
+							<div class="col-md-4 pr-1">
+							
+
+	
+		<input type="text" placeholder="Interior">
+	</div>
+
+								<div class="col-md-4 pl-1 pr-1">
+								
+
+	
+		<input type="text" placeholder="Exterior">
+	</div>
+	
+								<div class="col-md-4 pl-1">
+								
+
+	
+		<input type="text" value="Total" readonly>
+	
+	</div>
+</div>
+</div>
+					
+					</div>
+										<div class="col-md-4">
+							<div class="input-space-white">
+<label for="">Units with this floor plan</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Select</option>
+		<option value="">1</option>
+		<option value="">2</option>
+		<option value="">3</option>
+		<option value="">4</option>
+		<option value="">5</option>
+		<option value="">6</option>
+		<option value="">7</option>
+		<option value="">8</option>
+		<option value="">9</option>
+		<option value="">10</option>
+		<option value="">11</option>
+		<option value="">12</option>
+		<option value="">13</option>
+		<option value="">14</option>
+		<option value="">15</option>
+		
+		
+		
+		</select>
+	
+	</div>
+</div>
+		<div class="input-space">
+
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+		<label for="">Unit number</label>
+		<input type="text" value="302" >
+	</div>
+		<div class="col-md-6 pl-md-1">
+			<label for="">Price (CAD)</label>
+		<input type="text"  value="$518,800">
+	</div>
+	</div>
+	</div>
+			<div class="input-space">
+
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+		<label for="">Unit number</label>
+		<input type="text" value="302" >
+	</div>
+		<div class="col-md-6 pl-md-1">
+			<label for="">Price (CAD)</label>
+		<input type="text"  value="$518,800">
+	</div>
+	</div>
+	</div>
+			<div class="input-space">
+
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+		<label for="">Unit number</label>
+		<input type="text" value="302" >
+	</div>
+		<div class="col-md-6 pl-md-1">
+			<label for="">Price (CAD)</label>
+		<input type="text"  value="$518,800">
+	</div>
+	</div>
+	</div>
+			<div class="input-space">
+
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+		<label for="">Unit number</label>
+		<input type="text" value="302" >
+	</div>
+		<div class="col-md-6 pl-md-1">
+			<label for="">Price (CAD)</label>
+		<input type="text"  value="$518,800">
+	</div>
+	</div>
+	</div>
+			<div class="input-space">
+
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+		<label for="">Unit number</label>
+		<input type="text" value="302" >
+	</div>
+		<div class="col-md-6 pl-md-1">
+			<label for="">Price (CAD)</label>
+		<input type="text"  value="$518,800">
+	</div>
+	</div>
+	</div>
+			<div class="input-space">
+
+	<div class="row">
+	<div class="col-md-6 pr-md-1">
+		<label for="">Unit number</label>
+		<input type="text" value="302" >
+	</div>
+		<div class="col-md-6 pl-md-1">
+			<label for="">Price (CAD)</label>
+		<input type="text"  value="$518,800">
+	</div>
+	</div>
+	</div>
+
+	<div class="mb-50 tp-40">
+	<div class="row">
+		
+		<div class="col-md-6 pr-md-1"><input type="button" class="btn-one" value="DELETE"></div>
+		<div class="col-md-6 pl-md-1"><input type="button" class="btn-two" value="ADD FLOOR PLAN"></div>
+	</div>
+	</div>
+
+</div>
+</div>
+</div>			<div id="horizontalTab2">
+<ul class="resp-tabs-list blk">
+<li class="mr-md-1">1 BEDROOM</li>
+<li class="mr-md-1">2 BEDROOMS</li>
+<li class="mr-md-1">3 BEDROOMS </li>
+
+
+</ul>
+
+</div>
+<div class="mt-in">
+<h4 class="sm-h">1 BEDROOM</h4>
+<div class="mob-none">
+	
+		<div class="row">
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 01</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 02</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+					<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 03</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 04</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 05</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+					<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 06</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			
+		</div>
+	</div>
+
+  <div class="m-right-z  d-none">
+  <div class="swiper-container right-z swiper-two" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 01</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	   
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f2.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 02</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+          </div>
+	  
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f3.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 03</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 04</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+           <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f2.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 05</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li><li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f3.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 06</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li><li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+ 
+    
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next lrg"></div>
+    <div class="swiper-button-prev lrg"></div>
+  </div>
+  </div>
+</div>
+<div class="mt-in mt-mn">
+<h4 class="sm-h">2 BEDROOM</h4>
+<div class="mob-none">
+	
+		<div class="row">
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 01</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 02</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+					<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 03</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 04</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 05</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+					<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 06</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			
+		</div>
+	</div>
+
+  <div class="m-right-z  d-none">
+  <div class="swiper-container right-z swiper-two" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 01</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	   
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f2.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 02</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+          </div>
+	  
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f3.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 03</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 04</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+           <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f2.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 05</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li><li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f3.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 06</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li><li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+ 
+    
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next lrg"></div>
+    <div class="swiper-button-prev lrg"></div>
+  </div>
+  </div>
+</div>
+<div class="mt-in mt-mn">
+<h4 class="sm-h">3 BEDROOM</h4>
+<div class="mob-none">
+	
+		<div class="row">
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 01</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 02</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+					<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 03</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 04</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 05</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+					<div class="col-md-4">
+					         <div class="plan-box marg-b">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 06</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Interior <span>|</span> Exterior):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	 
+			</div>
+			
+		</div>
+	</div>
+
+  <div class="m-right-z  d-none">
+  <div class="swiper-container right-z swiper-two" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 01</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	   
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f2.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 02</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+          </div>
+	  
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f3.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 03</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f1.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 04</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li> <li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+           <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f2.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 05</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li><li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+      <div class="swiper-slide">
+	         <div class="plan-box">
+          <a href="#"  data-toggle="modal" data-target="#exampleModal">
+           <div class="border-img"><img src="images/f3.jpg" class="img-responsive "></div> </a>
+			<div class="g-bg clearfix">
+			<div class="row">
+				<div class="col-9">
+				<b>PLAN 06</b>
+				</div>
+				<div class="col-3">
+				<div class="hrt-cvr"><a href="" class="edit-text">Edit</a></div>
+				</div>
+			</div>
+			</div>
+			<ul class="specs clearfix">
+			
+<li>Bedrooms:</li>
+
+<li>1 + Den</li>
+
+
+
+
+<li>Bathrooms:</li> <li>1</li>
+<li>Size (Living <span>|</span> Terrace):</li> <li>535 SF <span>|</span> 95 SF</li>
+<li>Base price:</li><li>$529,900</li>
+
+			</ul>
+           
+           
+          </div>
+	  </div>
+ 
+    
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next lrg"></div>
+    <div class="swiper-button-prev lrg"></div>
+  </div>
+  </div>
+</div>
+		<div class="h-area mt-ex">
+<h2 class="admin-heading-sub bod new-bt">DOCUMENTS</h2>
+<a href="javascript:void(0)" class="close-link opendoc">Add</a>
+</div>
+
+	<div class="showdoc">
+	<div class="row">
+										<div class="col-md-4">
+							<div class="input-space-white">
+<label for="">Document type</label>
+		  <div class="select wht">
+		
+	
+	
+		<select name="" id="slct">
+		<option value="">Contract of Purchase and Sale</option>
+		<option value="">1</option>
+		<option value="">2</option>
+		<option value="">3</option>
+		
+		</select>
+	
+	</div>
+</div>
+<div class="input-space">
+	
+	<label for="">Document</label>
+	<a href="" class="edit-link">Upload</a>
+		<input type="text" value="CPS.pdf">
+		<a href="" class="close-icon"><i class="zmdi zmdi-close"></i></a>
+	</div>
+		<div class="mb-50">
+		<div class="row">
+		
+		<div class="col-md-6 pr-md-1"><input type="button" class="btn-one" value="DELETE"></div>
+		<div class="col-md-6 pl-md-1"><input type="button" class="btn-two" value="ADD DOCUMENT"></div>
+	</div>
+	</div>
+	
+	
+</div>
+</div>
+</div>
+  <table class="prj-list bt-blk bd bt-grey top-bk">
+  <thead>
+    <tr>
+      <th width="30%" scope="col" >DOCUMENT NAME</th>
+      <th width="60%" scope="col">FILE</th>
+    
+      <th width="10%" scope="col" class="text-right">EDIT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="DOCUMENT NAME">Contract of Purchase and Sale</td>
+      <td data-label="FILE" >
+	 CPS.pdf
+
+
+	  </td>
+      <td data-label="EDIT" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+    <tr>
+      <td data-label="DOCUMENT NAME">Contract of Purchase and Sale</td>
+      <td data-label="FILE" >
+	 CPS.pdf
+
+
+	  </td>
+      <td data-label="EDIT" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+    <tr>
+      <td data-label="DOCUMENT NAME">Contract of Purchase and Sale</td>
+      <td data-label="FILE" >
+	 CPS.pdf
+
+
+	  </td>
+      <td data-label="EDIT" class="text-right"><a href="">Edit</a></td>
+     
+    </tr>
+    
+	
+ </tbody>
+</table>
+<div class="row">
+<div class="col-md-4">
+<div class="input-space ex-top ex-b blk-btn">
+	
+		<input type="submit" value="SAVE PROGRESS">
+	</div>
+</div>
+<div class="col-md-4"></div>
+<div class="col-md-4">
+<div class="input-space ex-top ex-b">
+<input type="submit" value="PUBLISH PROJECT" data-toggle="modal" data-target="#publish-project">
+	</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+  <!-- The Modal -->
+<div class="modal" id="publish-project">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+  
+
+      <!-- Modal body -->
+      <div class="modal-body">
+	  <div class="icon-cs"><i class="zmdi zmdi-alert-octagon"></i></div>
+       <h4>Are you sure you want to publish the project?</h4>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-danger blkk" data-dismiss="modal">No</button>
+      </div>
+
+    </div>
+  </div>
+</div> 
+
+
+
+   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="js/pushy.min.js"></script> 
+
+  <script>
+  
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4',
+			format: 'mmm dd yyyy'
+			 
+        });
+		     $('#datepicker2').datepicker({
+             uiLibrary: 'bootstrap4',
+			format: 'mmm dd yyyy'
+        });
+    </script>
+<script>
+ $('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).siblings('.panel-heading').addClass('active');
+  });
+
+  $('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).siblings('.panel-heading').removeClass('active');
+  });
+</script>
+<script>
+$(function() { 
+$('.dropdown-toggle-new').click(function() { $(this).next('.dropdown-new').slideToggle();
+});
+
+$(document).click(function(e) 
+{ 
+var target = e.target; 
+if (!$(target).is('.dropdown-toggle-new') && !$(target).parents().is('.dropdown-toggle-new')) 
+//{ $('.dropdown').hide(); }
+  { $('.dropdown-new').slideUp(); }
+});
+});
+</script>
+<script>
+$('input.one:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('label.one').addClass("lb-blk");
+    } else {
+        $('label.one').removeClass("lb-blk");
+    }
+});
+$('input.two:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('label.two').addClass("lb-blk");
+    } else {
+        $('label.two').removeClass("lb-blk");
+    }
+});
+$('input.three:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('label.three').addClass("lb-blk");
+    } else {
+        $('label.three').removeClass("lb-blk");
+    }
+});
+$('input.four:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('label.four').addClass("lb-blk");
+    } else {
+        $('label.four').removeClass("lb-blk");
+    }
+});
+
+</script>
+   			  <script>
+    var swiper = new Swiper('.swiper-two', {
+     slidesPerView: 1.192,
+    spaceBetween: 30,
+
+      speed:300,
+	 freeMode: false,
+ slidesPerGroup: 1,
+ loop: true,	
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+	  navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+	 breakpoints: {
+         
+        767:{
+            slidesPerView: 3, slidesPerGroup: 3,  spaceBetween: 30, speed:1200
+           
+        }
+       
+        }
+    });
+  </script>
+  <script>   
+$('.dropdown-el').click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(this).toggleClass('expanded');
+  $('#'+$(e.target).attr('for')).prop('checked',true);
+});
+$(document).click(function() {
+  $('.dropdown-el').removeClass('expanded');
+});
+</script> 
+  <script src="js/easy-responsive-tabs.js"></script>
+<script>
+$(document).ready(function () {
+
+
+
+$('#horizontalTab2').easyResponsiveTabs({
+type: 'default', //Types: default, vertical, accordion
+width: 'auto', //auto or any width like 600px
+fit: true,   // 100% fit in a container
+closed: 'accordion', // Start closed if in accordion view
+activate: function(event) { // Callback function if tab is switched
+var $tab = $(this);
+var $info = $('#tabInfo');
+var $name = $('span', $info);
+$name.text($tab.text());
+$info.show();
+}
+});
+
+
+
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+});
+</script>
+	<script>
+		$(window).on('load', function () {    
+
+    $('body').removeClass('stop-scrolling');
+});
+		</script>
+		<script>
+$(window).on('load', function(){
+    $('.overlay').fadeOut(500);
+})
+</script>
+<script>
+$(document).ready(function(){
+  $(".forgot").click(function(){
+    $(".login-form").hide(500);
+    $(".forgot-form").show(500);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('.open').click(function(){
+    
+       $('.showpanel').toggle();
+       if($(this).text() == 'Add')
+       {
+           $(this).text('Close');
+       }
+       else
+       {
+           $(this).text('Add');
+       }
+           });
+    
+ 
+    
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('.openfloor').click(function(){
+    
+       $('.showfloor').toggle();
+       if($(this).text() == 'Add')
+       {
+           $(this).text('Close');
+       }
+       else
+       {
+           $(this).text('Add');
+       }
+           });
+    
+ 
+    
+
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('.opendoc').click(function(){
+    
+       $('.showdoc').toggle();
+       if($(this).text() == 'Add')
+       {
+           $(this).text('Close');
+       }
+       else
+       {
+           $(this).text('Add');
+       }
+           });
+    
+ 
+    
+
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('.opensale').click(function(){
+    
+       $('.showsale').toggle();
+       if($(this).text() == 'Add')
+       {
+           $(this).text('Close');
+       }
+       else
+       {
+           $(this).text('Add');
+       }
+           });
+    
+ 
+    
+
+});
+</script>
+   </body>
+   </html>
